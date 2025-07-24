@@ -1,0 +1,204 @@
+/* genral */
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+HU:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+HU:wght@100..400&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    justify-self: space-between;
+    align-self: center;
+    background: hsla(316, 87%, 79%, 0.402);
+    padding: 30px, 10%;
+
+}
+body{
+    font-family: "Playwrite HU", cursive;
+    background:hsla(48, 69%, 85%, 0.402);
+
+}
+.logo{
+    margin: 3px;
+    background: hsla(316, 88%, 73%, 0.97);
+    width: 80px;
+
+    height: 55px;
+    padding-top: 8px;
+    padding-left: 6px;
+    border: 2px hsla(316, 87%, 79%, 0.97);
+    border-radius: 10px;
+
+
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+
+    cursor: pointer;
+}
+.links{
+    
+    list-style: none;
+    padding-left: 80%;
+    padding-top: 1%;
+
+}
+.about{
+    padding-right: 20px;
+}
+
+.links li{
+    display:inline-block;
+    padding: 0px, 80px;
+}
+.links li a{
+    transition: all 0.3s ease 0s;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: hsla(316, 88%, 73%, 0.97);
+    border: 2px hsla(316, 87%, 79%, 0.97);
+    border-radius: 10px;
+
+}
+
+.links li a:hover{
+    color: antiquewhite;
+}
+
+.main_page{
+    display: grid;
+    grid-template-columns: 40% 20% 10% 29% ;
+    grid-template-rows: repeat(3,210px);
+
+    grid-gap: 10px 10px;
+
+    padding:.5%;
+
+    font-family: "Dancing Script", cursive;
+}
+
+
+
+
+.daily_s{
+    background: hsla(334, 85%, 79%, 0.308);
+    border: 2px hsla(316, 79%, 85%, 0.797);
+    border-radius: 10px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    transition: all 0.3s ease 0s;
+    
+    
+}
+.daily_s:hover{
+    background: hsla(0, 0%, 100%, 0.144);
+    box-shadow: 0 0 10px rgba(255, 0, 150, 0.4);
+}
+
+.mood_tracker:hover{
+    background: hsla(0, 0%, 100%, 0.144);
+    box-shadow: 0 0 10px rgba(255, 0, 150, 0.4);
+}
+
+.recent_journal:hover{
+    background: hsla(0, 0%, 100%, 0.144);
+    box-shadow: 0 0 10px rgba(255, 0, 150, 0.4);
+}
+
+.quick_journal:hover{
+    background: hsla(0, 0%, 100%, 0.144);
+    box-shadow: 0 0 10px rgba(255, 0, 150, 0.4);
+}
+
+.prayer_requests:hover{
+    background: hsla(0, 0%, 100%, 0.144);
+    box-shadow: 0 0 10px rgba(255, 0, 150, 0.4);
+}
+
+.mood_tracker{
+    background: hsla(334, 85%, 79%, 0.308);
+    border: 2px hsla(316, 91%, 82%, 0.797);
+    border-radius: 10px;
+    grid-column-start: 4;
+    grid-column-end: 5;
+
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    transition: all 0.3s ease 0s;
+
+}
+
+.quick_journal{
+    background: hsla(334, 85%, 79%, 0.308);
+    border: 2px hsla(316, 91%, 82%, 0.797);
+    border-radius: 10px;
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    transition: all 0.3s ease 0s;
+
+}
+
+.prayer_requests{
+        background: hsla(334, 85%, 79%, 0.308);
+        border: 2px hsla(316, 91%, 82%, 0.797);
+        border-radius: 10px;
+
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+        transition: all 0.3s ease 0s;
+
+}
+.recent_journal{
+        background: hsla(334, 85%, 79%, 0.308);
+        border: 2px hsla(316, 91%, 82%, 0.797);
+        border-radius: 10px;
+
+        grid-column-start: 2;
+        grid-column-end: 5;
+
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        
+        transition: all 0.3s ease 0s;
+}
+
+.scripture{
+    padding-top: 30px;
+    font-family: "Playfair Display", serif;
+    text-align: center;
+}
+
+.mood{
+      
+        border: 2px hsla(316, 91%, 82%, 0.797);
+
+        position: relative;
+        display: inline-block;
+
+        align-items: center;
+        
+
+
+
+}
+
+
+input[type="text"] {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+}
